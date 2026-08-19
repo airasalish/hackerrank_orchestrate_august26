@@ -12,6 +12,8 @@ WhatsApp is noisy. A user can receive family chats, society notices, school upda
 
 Read [`problem_statement.md`](./problem_statement.md) for the full task spec, input/output schema, allowed values, and submission format.
 
+**The submitted solution lives in [`code/`](./code), documented in [`code/README.md`](./code/README.md)** — setup, env vars, how to run it, how the pipeline works, and the provider decisions made along the way.
+
 ---
 
 ## Repository Layout

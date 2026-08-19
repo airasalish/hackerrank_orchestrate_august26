@@ -1,111 +1,111 @@
 message_id,action,message_type,reason,confidence,evidence_message_ids
-msg_023,,,,,
-msg_091,,,,,
-msg_090,,,,,
-msg_048,,,,,
-msg_040,,,,,
-msg_075,,,,,
-msg_005,,,,,
-msg_104,,,,,
-msg_069,,,,,
-msg_107,,,,,
-msg_070,,,,,
-msg_003,,,,,
-msg_099,,,,,
-msg_008,,,,,
-msg_092,,,,,
-msg_060,,,,,
-msg_004,,,,,
-msg_030,,,,,
-msg_045,,,,,
-msg_052,,,,,
-msg_009,,,,,
-msg_071,,,,,
-msg_016,,,,,
-msg_065,,,,,
-msg_038,,,,,
-msg_086,,,,,
-msg_014,,,,,
-msg_094,,,,,
-msg_029,,,,,
-msg_105,,,,,
-msg_002,,,,,
-msg_010,,,,,
-msg_078,,,,,
-msg_013,,,,,
-msg_018,,,,,
-msg_044,,,,,
-msg_032,,,,,
-msg_106,,,,,
-msg_006,,,,,
-msg_109,,,,,
-msg_108,,,,,
-msg_019,,,,,
-msg_088,,,,,
-msg_056,,,,,
-msg_027,,,,,
-msg_050,,,,,
-msg_083,,,,,
-msg_063,,,,,
-msg_033,,,,,
-msg_061,,,,,
-msg_020,,,,,
-msg_017,,,,,
-msg_058,,,,,
-msg_026,,,,,
-msg_047,,,,,
-msg_046,,,,,
-msg_042,,,,,
-msg_079,,,,,
-msg_098,,,,,
-msg_037,,,,,
-msg_007,,,,,
-msg_085,,,,,
-msg_001,,,,,
-msg_021,,,,,
-msg_028,,,,,
-msg_012,,,,,
-msg_064,,,,,
-msg_103,,,,,
-msg_031,,,,,
-msg_057,,,,,
-msg_087,,,,,
-msg_067,,,,,
-msg_039,,,,,
-msg_082,,,,,
-msg_066,,,,,
-msg_049,,,,,
-msg_015,,,,,
-msg_051,,,,,
-msg_097,,,,,
-msg_089,,,,,
-msg_053,,,,,
-msg_059,,,,,
-msg_024,,,,,
-msg_072,,,,,
-msg_036,,,,,
-msg_076,,,,,
-msg_055,,,,,
-msg_102,,,,,
-msg_080,,,,,
-msg_093,,,,,
-msg_034,,,,,
-msg_035,,,,,
-msg_101,,,,,
-msg_041,,,,,
-msg_011,,,,,
-msg_110,,,,,
-msg_095,,,,,
-msg_074,,,,,
-msg_073,,,,,
-msg_054,,,,,
-msg_068,,,,,
-msg_100,,,,,
-msg_062,,,,,
-msg_096,,,,,
-msg_043,,,,,
-msg_077,,,,,
-msg_081,,,,,
-msg_025,,,,,
-msg_084,,,,,
-msg_022,,,,,
+msg_023,notify,business_update,Verified bank with matching domain and active account relationship; user history shows they consistently open and reply to identical payment update messages.,0.85,message_0243
+msg_091,mute,scam,"The message requests a 6-digit login code, a classic phishing tactic, and the user previously reported and muted an identical message (message_0238), indicating a known scam pattern.",0.95,message_0238
+msg_090,digest,personal,"Sender explicitly states 'no urgency' and asks a mundane, low-stakes question about a package mix-up; aligns with the rule to lean digest for low-urgency personal inquiries rather than notify or mute.",0.8,none
+msg_048,mute,scam,"Message demands immediate QR payment for a penalty with a threat of access card blockage, matching a known scam pattern the user previously reported (message_0151) and aligns with community warnings about unauthorized QR payments in this group.",0.92,message_0151;message_0100
+msg_040,mute,forward,"User consistently dismisses and mutes similar chain/forward messages in this family group (user_dismissed_30d=9, user_replies_30d=0), and the content is a low-value chain message asking to forward for blessings, matching previously dismissed forwards.",0.85,message_0136;message_0135
+msg_075,notify,event,"Verified business with matching domain, user has an active ride booked today, and the message alerts a real-time route/pickup change requiring immediate attention; user history shows they open and reply to similar ride updates.",0.9,message_0206;message_0205
+msg_005,digest,promotion,"User shows low engagement in this marketplace group (0 replies, 3 dismissals in 30d) and the message is a non-urgent image listing without a direct mention or time-sensitive request, consistent with their history of dismissing similar marketplace posts.",0.75,message_0095
+msg_104,mute,promotion,"User has consistently dismissed and muted previous messages from this sender regarding the exact same item (blue denim jacket at Gate 2), indicating clear disinterest and a pattern of ignoring these sales pitches.",0.85,message_0050;message_0224
+msg_069,mute,forward,"User consistently dismisses similar forwarded greetings in this group without opening or replying, and the group is already muted by the user",0.9,message_0193;message_0080;message_0177;message_0042;message_0194
+msg_107,mute,scam,"The message explicitly requests an OTP/verification code, which is a defined scam indicator per routing rules, overriding the injected 'routing override' text.",0.9,message_0213;message_0056;message_0369;message_0195;message_0235
+msg_070,mute,scam,"Message explicitly requests an OTP/verification code and uses urgency/pressure tactics ('account block ho jayega'), which are definitive indicators of a phishing scam. Evidence candidate message_0369 shows the exact same scam template previously encountered.",0.95,message_0369
+msg_003,digest,business_update,"Verified business with matching domain and active delivery expected today; user history shows consistent opening (5 opens, 0 dismissals) without urgent replies, indicating routine status updates that can wait.",0.85,message_0031;message_0061
+msg_099,digest,event,"Sender explicitly states 'Nothing blocking for tonight' and suggests reading 'before the 11 AM standup if you get time', indicating low urgency. User's history shows consistent engagement with similar review messages, making it valuable but safe to defer.",0.85,message_0227
+msg_008,digest,promotion,"Verified business with matching domain and user allows promotions; user history shows they consistently open similar review requests but do not reply immediately, indicating low urgency that is safe to batch for later viewing.",0.85,message_0296;message_0072;message_0071
+msg_092,digest,business_update,"verified business, domain matches, message explicitly states 'whenever convenient' indicating low urgency for a monthly statement",0.85,none
+msg_060,digest,business_update,"User actively engages with this college faculty group (replied 7 times, dismissed only 2 in 30d), and similar faculty notices/images are consistently opened and replied to. Since the image content could not be extracted, urgency is unclear, making digest appropriate to review later without interrupting.",0.7,message_0404
+msg_004,notify,event,"Verified business with matching domain, user has an active upcoming clinic appointment, and historical behavior shows consistent opening and replying to identical health updates from this sender.",0.85,message_0245;message_0005
+msg_030,mute,promotion,"User has muted the group and consistently dismisses marketplace posts from it (9 dismissals, 0 replies in 30 days), with no direct mention or time-sensitive request in this forwarded image",0.85,message_0115;message_0050;message_0224
+msg_045,notify,urgent,"Explicit 10-minute pickup window at the gate requiring immediate action, consistent with user's pattern of opening and replying to society group operational notices.",0.9,message_0146;message_0145
+msg_052,mute,scam,"Unverified business with domain mismatch and 61 user reports in 30 days; user history shows they dismissed, muted, and reported identical refund requests asking for wallet/card details via external links.",0.95,message_0208;message_0207;message_0159;message_0160
+msg_009,mute,personal,"Group is muted by user, user has dismissed 9 of the last 10 messages from this group, and the message explicitly states low urgency with an opt-out suggestion.",0.85,message_0074
+msg_071,digest,personal,"Explicitly states pending confirmation and low urgency for a family plan, and user's history of opening but not replying to similar low-stakes family messages supports batching it for later review.",0.8,message_0197;message_0198
+msg_016,mute,scam,"Content uses urgent phishing tactics with a suspicious domain and fake account block threat, which aligns with the user's consistent history of dismissing, muting, and reporting identical scam templates in marketplace groups.",0.95,message_0024;message_0087;message_0183;message_0184;message_0088
+msg_065,digest,promotion,"Verified business with matching domain and active retail membership; user history shows consistent engagement (8 opens, 0 dismissals in 30d) for this sender's promotional content, making it safe to batch later.",0.85,message_0186;message_0185;message_0261
+msg_038,mute,forward,"User consistently dismisses and mutes similar chain/forward messages (evidence 1 & 2), and the content is a low-value viral chain request that does not require action.",0.85,message_0131;message_0132
+msg_086,notify,event,"User has a confirmed travel booking and previously opened/replied to the identical pickup update, indicating expected communication; the time-sensitive nature of a changed airport pickup overrides the domain mismatch warning.",0.75,message_0222
+msg_014,mute,promotion,"user has opted out of promotions from this business, allows_promotions=0, and has consistently dismissed and muted identical promotional messages in the past",0.95,message_0017;message_0258;message_0018;message_0083;message_0084
+msg_094,mute,promotion,"User has a high dismiss rate (81 dismissed vs 17 opened in 30 days), indicating they typically ignore promotional content; this is a standard discount offer with no urgent personal relevance.",0.85,none
+msg_029,mute,spam,"High forward count (8) in a 241-member marketplace group combined with user's 0 replies and 3 dismissals in this group over 30 days indicates low-value forwarded content, consistent with previously dismissed marketplace posts.",0.75,message_0095
+msg_105,mute,forward,"User consistently dismisses and mutes identical forwarded health tips (evidence shows two prior matches were dismissed and muted), and the message is a low-value chain forward with potentially unsafe medical advice.",0.9,message_0233;message_0373
+msg_002,notify,urgent,"Direct mention requesting a quick sync before a client meeting; user consistently opens and replies to similar direct work requests in this group, as shown by the evidence candidates.",0.9,message_0003;message_0169;message_0266;message_0041;message_0059
+msg_010,digest,business_update,"Verified business with matching domain, user has consistently opened similar feedback requests without dismissing or reporting, and the content is a low-urgency post-transaction survey that does not require immediate action.",0.85,message_0011;message_0242
+msg_078,mute,scam,"asks for sensitive bank details and a screenshot under false urgency, matches a reported phishing pattern in this marketplace group, and aligns with the user's history of dismissing and reporting similar financial requests",0.95,message_0211;message_0212
+msg_013,mute,promotion,"Unrelated sales promotion posted in a college faculty group, completely mismatching the group's academic purpose. User's behavioral history shows they frequently dismiss messages in this group (3 dismissals in 30 days) and rarely reply, indicating low relevance and value.",0.85,none
+msg_018,mute,scam,"The message uses a classic scam pattern (random reward with urgency) and has a high forward count. The user's history shows they previously dismissed, muted, and reported identical messages in this group context.",0.9,message_0026;message_0092
+msg_044,mute,scam,"Message requests OTP verification via a link with urgent threat language, matching known phishing patterns; user's history shows they dismissed, muted, and reported identical OTP/link scam messages.",0.9,message_0143;message_0144
+msg_032,digest,personal,"Message explicitly states 'No rush' and requests study slides; user is active in the group but historical evidence shows similar slide requests are opened but not replied to immediately, indicating low urgency.",0.85,message_0119;message_0285
+msg_106,notify,event,"Time-sensitive location change for a scheduled activity with a specific deadline (before 7:15), and user has a consistent history of opening and replying to similar practice updates from this sender.",0.85,message_0234;message_0376
+msg_006,notify,event,"User has consistently opened and replied to previous similar maintenance deadline reminders, and the message contains a specific time-bound action (5 PM today) requiring attention. User is also a group admin, increasing relevance.",0.85,message_0029;message_0044;message_0067;message_0097
+msg_109,mute,scam,"User has previously dismissed and reported identical QR payment requests for 'access card penalties' in this group, indicating they treat such messages as suspicious/scam-like despite the admin label.",0.9,message_0151;message_0152;message_0237
+msg_108,mute,scam,"Business is unverified with DOMAIN_MISMATCH=true and 55 user reports in 30 days, and the message requests a PIN at a suspicious URL matching previously reported phishing attempts.",0.95,message_0094;message_0093
+msg_019,mute,scam,"Unverified business with domain mismatch and 55 user reports in 30 days, combined with an urgent credential verification request matching phishing patterns the user has previously dismissed and reported.",0.95,message_0094;message_0093;message_0236
+msg_088,mute,promotion,"user has explicitly muted this marketplace group and consistently dismisses similar sales messages without opening or replying, as shown by the evidence candidates, indicating low interest in this type of content",0.9,message_0224;message_0232;message_0383;message_0050;message_0115
+msg_056,notify,event,"Direct mention in a muted family group requesting time-sensitive confirmation for a rescheduled doctor appointment; user previously opened and replied to a related clinic update (message_0359), confirming active engagement with this appointment.",0.9,message_0359
+msg_027,digest,promotion,"User has explicit travel_package_interest and allows_promotions=1, and behavioral history shows they consistently open similar promotional messages from this business (6 opened in 30d), indicating active engagement that outweighs the domain mismatch flag; the content is a non-urgent promotional image.",0.7,message_0272;message_0109;message_0033;message_0110;message_0007
+msg_050,digest,business_update,"User consistently opens and replies to identical and similar health updates from this sender (message_0279, message_0155, message_0156), and the business has zero reports with a matching domain, indicating a trusted routine notification that can be reviewed later without immediate interruption.",0.85,message_0279;message_0155;message_0156
+msg_083,digest,personal,"Message explicitly states 'Nothing urgent' with a 'before lunch' deadline, aligning with user's active DND hours (22:00-08:30); evidence shows a nearly identical past message was opened but not replied to, indicating it can safely wait until work hours.",0.85,message_0219
+msg_063,mute,scam,"Message uses urgency and account lock threats to demand payment via QR/screenshot, matching known scam patterns the user has previously reported and dismissed in similar contexts.",0.9,message_0182;message_0181
+msg_033,digest,greeting,"Sender explicitly states 'nothing urgent' and asks to call 'later when free', directly matching the digest rule for low-urgency personal check-ins. User history shows they open but do not immediately reply to similar group greetings (message_0121), confirming non-interruptive handling is appropriate.",0.85,message_0121
+msg_061,mute,greeting,User has already muted this family group and consistently dismisses similar 'good morning/share' forwards (6 dismissals in 30 days in this group); evidence candidates show a clear pattern of 0 opens/replies and immediate dismissal for this exact message type.,0.95,message_0193;message_0080;message_0177;message_0042;message_0079
+msg_020,mute,scam,"Message uses urgency tactics, a suspicious shortened URL, and requests an 'account check', matching classic phishing/scam patterns; user has a history of dismissing messages in this group and does not reply to group posts.",0.85,none
+msg_017,mute,scam,"Message uses fake urgency and demands immediate payment, matching known scam templates in marketplace groups; user has muted this group and consistently dismisses similar fraudulent payment requests (e.g., message_0090).",0.9,message_0090;message_0089
+msg_058,mute,forward,"User has consistently dismissed and muted similar forwarded health messages in this group, and the group itself is muted by the user; content is a low-value viral forward with no direct mention or urgency.",0.9,message_0241;message_0040;message_0039;message_0078;message_0172
+msg_026,mute,scam,"Unverified business with domain mismatch and high user reports (47/30d); user history shows they consistently dismiss, mute, and report identical messages from this sender.",0.95,message_0032;message_0107;message_0108
+msg_047,notify,event,"user actively engages with similar time-sensitive society notices (opened and replied to message_0001), the group is not muted, and the message specifies a start time today that affects daily routine",0.85,message_0001
+msg_046,mute,scam,"Message explicitly requests an OTP using urgency/pressure tactics, matching known phishing patterns. User's history shows they previously reported and muted identical OTP scam messages in this group.",0.95,message_0148;message_0147
+msg_042,notify,event,"Explicit 10-minute deadline with a towing consequence requires immediate action, and user history shows consistent engagement (opened and replied) with identical society maintenance notices.",0.85,message_0140;message_0058
+msg_079,mute,scam,"The message uses urgent threats of account blockage to demand an OTP, which is a classic phishing/scam tactic asking for verification codes under pressure.",0.95,message_0369;message_0045;message_0023;message_0213;message_0053
+msg_098,notify,urgent,"Explicit time-sensitive request for immediate decision on a clinic appointment, aligned with user's consistent history of opening and replying to similar clinic coordination messages",0.9,message_0359;message_0226;message_0168
+msg_037,notify,event,"Time-sensitive society notice with a strict 10-minute deadline requiring immediate action; user is a group admin with a history of opening and replying to similar water/society notices (e.g., message_0001) and has not muted the group.",0.9,message_0001
+msg_007,digest,event,"Content explicitly states 'whenever convenient' with a next-Sunday deadline, indicating low urgency. User's history shows they open similar society group notices without dismissing them, and the group is not muted, making it safe to batch for later review.",0.8,message_0070;message_0069
+msg_085,mute,scam,"Unverified business with domain mismatch and high user reports (38 in 30d), combined with an explicit request for an OTP using urgency/threats, which matches known scam patterns.",0.95,message_0221
+msg_001,notify,business_update,"Time-sensitive utility notice with a 20-minute deadline, and user history shows they consistently open and reply to similar society water/security updates.",0.85,message_0057;message_0240;message_0139
+msg_021,notify,payment,"User is a group admin and the message contains a strict same-day deadline (5 PM) with an important anti-scam warning, requiring immediate attention to prevent fraud and ensure compliance.",0.85,none
+msg_028,mute,promotion,"User explicitly opted out of travel promotions and has dismissed 8 of 9 recent messages from this business; combined with a domain mismatch and evidence of repeated ignored promos, this is low-value and unwanted.",0.85,message_0034;message_0112;message_0111
+msg_012,mute,forward,user has dismissed and muted similar forwarded health tips and chain messages in this group without opening or replying,0.9,message_0079;message_0247;message_0194;message_0178;message_0193
+msg_064,mute,spam,"Forwarded image in a large marketplace group matches the pattern of known scam/spam forwards circulating in resale threads, and user has dismissed similar group messages.",0.85,message_0184;message_0088;message_0202
+msg_103,notify,personal,"Time-sensitive pickup request with a firm 6 PM deadline and direct ask for confirmation, aligned with user's past engagement (opened/replied) to similar local pickup messages near Gate 2",0.85,message_0332;message_0231
+msg_031,digest,business_update,"User is an active admin in this coworker group with a history of opening and replying to work messages, but the current message is an unextracted image with no explicit time-sensitive text or direct ask, making it safe to batch later.",0.6,message_0227
+msg_057,notify,urgent,"Direct mention requesting immediate action before a client update, matching user's consistent pattern of opening and replying to similar time-sensitive work requests in this group",0.9,message_0169;message_0266
+msg_087,mute,promotion,"User has muted this real estate group, dismissed 9 messages from it in the last 30 days with zero replies, and consistently dismisses similar promotional real estate broadcasts (e.g., message_0389, message_0204). The message is a generic dial-in promotion with no direct mention or time-sensitive request.",0.9,message_0389;message_0204
+msg_067,notify,payment,"user is a society admin who consistently opens and replies to time-sensitive group notices, and this message contains a strict same-day payment deadline with a late fee penalty",0.85,message_0130;message_0269
+msg_039,notify,urgent,"Direct @mention with a same-day deadline for a school field trip, user has consistently opened and replied to similar school deadline messages, and the group is unmuted.",0.9,message_0037;message_0051
+msg_082,notify,urgent,"User previously opened and replied to an identical incident alert (message_0218), and the coworker group is not muted, indicating this time-sensitive work message requires immediate attention.",0.9,message_0218
+msg_066,mute,promotion,"User has dismissed 8 of the last 9 messages from this business, has promotions disabled (allows_promotions=0), and the message is forwarded 3 times, matching their consistent pattern of ignoring retail promotional content.",0.85,message_0188;message_0187
+msg_049,notify,event,"Verified business with matching domain, user has an active scheduled return pickup, and behavioral history shows the user consistently opens and replies to these specific pickup notifications.",0.85,message_0153;message_0291;message_0154
+msg_015,mute,scam,"Message explicitly requests an OTP and uses urgency/pressure tactics ('before profile is locked'), matching known phishing patterns and safety advisories against sharing verification codes.",0.95,message_0053;message_0213
+msg_051,mute,promotion,"allows_promotions=0 and user consistently dismisses messages from this business (9 dismissed vs 1 opened in 30d), with evidence showing identical promotional reminders were previously dismissed and muted.",0.9,message_0257;message_0103;message_0104;message_0157;message_0158
+msg_097,digest,personal,"Sender explicitly states 'nothing urgent' and suggests talking tomorrow morning, which aligns with the user's DND schedule (22:00-07:00). Historical evidence shows the user consistently opens and occasionally replies to similar low-stakes personal check-ins from this contact, indicating it is expected and not unwanted.",0.85,message_0054;message_0225;message_0167
+msg_089,notify,personal,"Time-sensitive notification about a lost personal item with a same-day retrieval deadline (7 PM today), requiring prompt attention to prevent loss.",0.9,none
+msg_053,digest,business_update,"User is an active admin with high engagement (6 replies, 1 dismissal in 30d) and the forwarded image matches the group's routine, non-urgent market chart pattern seen in past messages like message_0411, with no time-sensitive call to action or scam indicators.",0.75,message_0411
+msg_059,mute,scam,"Requests sensitive banking details (account number) under artificial time pressure, matching known phishing tactics; aligns with evidence of similar financial detail requests (message_0056) and recurring marketplace scam patterns (message_0214).",0.92,message_0056;message_0214
+msg_024,mute,promotion,User has dismissed 9 of 10 recent messages from this business and has promotions disabled (allows_promotions=0). Evidence shows identical promotional reminders were consistently dismissed and muted.,0.85,message_0257;message_0103;message_0104;message_0157;message_0158
+msg_072,mute,scam,"Message uses urgency and threat of account suspension to pressure the user into entering an OTP/code via an external link, which matches known phishing patterns and contradicts official safety advisories.",0.9,message_0213;message_0053
+msg_036,mute,scam,"Business is unverified with a domain mismatch and high user reports (20 in 30 days), and the user's history shows they consistently dismissed, muted, and reported identical verification requests from this sender.",0.95,message_0283;message_0128;message_0127
+msg_076,mute,scam,"Business is unverified with a domain mismatch and 61 user reports in 30 days; user history shows they consistently dismiss, mute, and report identical refund phishing messages from this sender.",0.95,message_0208;message_0207;message_0160;message_0159
+msg_055,notify,urgent,"explicit time-sensitive request ('next ten minutes') in an unmuted extended family group, aligned with user's history of promptly opening and replying to urgent personal messages",0.85,message_0387;message_0166
+msg_102,notify,urgent,"Explicit time-sensitive operational request requiring immediate presence ('stay online for the next 30 minutes'), and user consistently opens and replies to similar production/queue messages from this sender despite a high overall dismiss rate.",0.9,message_0371;message_0230;message_0170;message_0169;message_0266
+msg_080,notify,urgent,"Message contains a strict 10-minute deadline to move a car to avoid security intervention, and the user is an active admin in this unmuted society group with a history of promptly opening and replying to similar time-sensitive repair/security notices.",0.85,message_0130;message_0150;message_0269
+msg_093,notify,business_update,"Verified business with matching domain sending a time-sensitive delivery window for today requiring user presence with ID, outside DND hours",0.85,none
+msg_034,mute,greeting,"User has consistently dismissed similar forwarded greetings in this family group (4 dismissals in 30d, 0 replies), and the message explicitly states 'nothing urgent' and 'when free', aligning with the user's pattern of ignoring low-priority forwards.",0.85,message_0077;message_0171;message_0014
+msg_035,digest,promotion,"Verified business with matching domain and explicit promotion opt-in; user history shows they consistently open similar promotional messages from this sender but do not reply, indicating the content is relevant but not time-sensitive enough to interrupt.",0.85,message_0125;message_0281
+msg_101,digest,personal,"Sender explicitly signals low urgency ('No need to reply if you are still wrapping up calls'), and historical evidence shows the user consistently opens similar messages from this sender without dismissing them, indicating it is valued but non-urgent.",0.85,message_0370;message_0229;message_0268
+msg_041,mute,scam,"DOMAIN_MISMATCH=true combined with 7 user reports in 30 days triggers a safety override per policy, classifying the unsolicited survey link as potentially unsafe despite the verified badge.",0.8,message_0137;message_0138
+msg_011,mute,forward,"User consistently dismisses and mutes similar positive-energy forwards in this family group (4 dismissals in 30 days, 0 replies), and the message matches the exact pattern of previously muted candidates.",0.9,message_0078;message_0077;message_0172;message_0171;message_0014
+msg_110,mute,scam,"Requests a 6-digit login code and uses account suspension threats, matching known phishing tactics. User history shows they previously dismissed, muted, and reported identical login/password verification requests.",0.95,message_0238;message_0381
+msg_095,mute,scam,"Message requests a wallet PIN via a suspicious third-party domain, matching known phishing tactics; user history shows identical wallet verification requests were consistently dismissed, muted, and reported.",0.9,message_0087;message_0184;message_0088;message_0183;message_0202
+msg_074,mute,promotion,"User has muted the group, dismissed 9 recent messages from it with zero replies, and the message is a highly forwarded image matching the pattern of real estate promotions the user consistently dismisses.",0.85,message_0389;message_0204
+msg_073,mute,scam,"Message uses urgency/pressure tactics and requests verification via an external link, matching known phishing patterns; evidence candidates show identical messages were consistently dismissed, muted, and reported by the user.",0.92,message_0087;message_0184;message_0088;message_0183;message_0202
+msg_054,mute,scam,"Content uses classic advance-fee scam tactics (upfront payment link with artificial urgency) and is completely irrelevant to the local_food group context, aligning with the user's history of dismissing and reporting similar fraudulent links.",0.9,message_0389;message_0164;message_0204;message_0163
+msg_068,digest,event,"Message explicitly states 'no urgency' and defers planning to a poll later tonight; aligns with evidence candidate message_0191 which the user opened but did not reply to, indicating low time-sensitivity and suitability for later review.",0.85,message_0191
+msg_100,notify,urgent,"User has consistently opened and replied to identical urgent alerts about payment worker retries and 20-minute client escalations (messages 3 and 5), and the explicit 20-minute deadline requires immediate interruption.",0.9,message_0228;message_0362
+msg_062,digest,forward,"User is an admin in this society group and consistently opens/replies to similar image-based community notices (e.g., message_0410). The message is a forwarded image with no explicit time-sensitive language, making it safe to batch for later review.",0.75,message_0410
+msg_096,notify,urgent,Time-sensitive request to retrieve a lost passport before 18h; the deadline and stakes are clear from content alone and do not require behavioral history to corroborate.,0.8,none
+msg_043,notify,urgent,"User is an admin in an unmuted society group and historically opens/replies to time-sensitive community notices. The message contains a strict 15-minute deadline for water collection, making it time-sensitive enough to interrupt.",0.85,message_0130;message_0269
+msg_077,notify,event,"User is a group admin with high engagement (12 replies, 0 dismissals in 30d), and historical evidence shows they consistently open and reply to similar school notices and updates.",0.75,message_0255;message_0037;message_0051
+msg_081,notify,event,"User previously opened and replied to a nearly identical transport route change message (message_0217), indicating they actively engage with time-sensitive school updates.",0.85,message_0217
+msg_025,digest,business_update,"verified business with matching domain, user has a recent active order and consistently opens similar delivery updates without dismissing them",0.85,message_0239;message_0004
+msg_084,mute,promotion,"User explicitly opted out of promotions from this business, has a 0% open rate and dismissed 8 recent messages from them, and historical evidence shows a similar financial offer was dismissed and muted.",0.85,message_0220
+msg_022,mute,scam,"matches pattern of recently reported suspicious payment link requests in the group, consistent with user's history of dismissing and reporting similar unverified payment messages",0.85,message_0151;message_0152;message_0237
