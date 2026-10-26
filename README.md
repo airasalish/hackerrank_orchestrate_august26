@@ -1,3 +1,30 @@
+<h1 align="center">📲 WhatsApp Notification Router</h1>
+
+<p align="center"><b>Ping now, save for later, or mute? Personalised triage for a noisy WhatsApp feed.</b></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/HackerRank_Orchestrate-August_2026-2ec866?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank Orchestrate August 2026">
+  <img src="https://img.shields.io/badge/Rank-%2327_of_1%2C983_%C2%B7_Top_1.4%25-f5b301?style=for-the-badge" alt="Rank #27 of 1,983, top 1.4%">
+  <img src="https://img.shields.io/badge/Groq-multimodal-f55036?style=for-the-badge" alt="Groq">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+</p>
+
+My **best finish**: **#27 of 1,983** in HackerRank's 24-hour AI agent hackathon.
+
+Family chats, society notices, school updates, promotions, poster images, voice notes and scams all land in one stream. For each message the router chooses **`notify` / `digest` / `mute`**, names the message type, explains why, gives a confidence score, and **cites the historical messages it used as evidence**.
+
+- 🧠 A Groq vision + text model in JSON mode reads text, image posters and voice notes
+- 🔗 User, group, business and history context is joined deterministically in plain Python
+- 🔁 Multi-key rotation and caching keep it inside free-tier quotas
+- 🧪 Tests in [`code/tests/`](code/tests) plus an evaluation report
+
+**▶ Solution docs and how to run it: [`code/README.md`](code/README.md)**
+
+---
+
+<details>
+<summary><b>Original challenge README</b></summary>
+
 # HackerRank Orchestrate
 
 Starter repository for the **HackerRank Orchestrate** 24-hour hackathon.
@@ -130,3 +157,9 @@ Before submitting, confirm:
 - `output.csv` has one row per row in `dataset/messages.csv`.
 - `output.csv` has the exact required columns in the exact required order.
 - Your runnable code and setup instructions are included in `code.zip`.
+
+</details>
+
+---
+
+<sub>Built by **Aira K. Salish** · [GitHub](https://github.com/airasalish) · [Portfolio](https://aira-salish.vercel.app) · [LinkedIn](https://linkedin.com/in/airasalish)</sub>
